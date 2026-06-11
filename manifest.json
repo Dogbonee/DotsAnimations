@@ -1,3 +1,5 @@
 {
+  "version" : "1.0.1",
+  "firmware" : "https://github.com/Dogbonee/DotsAnimations/raw/refs/heads/main/firmware.bin"
   "activeAnimation" : "https://github.com/Dogbonee/DotsAnimations/raw/refs/heads/main/animation.dots"
 }
