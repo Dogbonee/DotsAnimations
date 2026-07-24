@@ -1,0 +1,3 @@
+# Ignore logs and credentials
+gilbert_log.txt
+.git-credentials
