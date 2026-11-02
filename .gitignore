@@ -1,3 +1,7 @@
 # Ignore logs and credentials
 gilbert_log.txt
 .git-credentials
+
+# Python cache
+__pycache__/
+*.py[cod]
