@@ -5,6 +5,13 @@ import shutil
 import subprocess
 from datetime import datetime
 
+# Use the bot identity for every sync, independent of the invoking user's config.
+# Set both roles explicitly so caller-provided Git environment variables cannot override it.
+os.environ["GIT_AUTHOR_NAME"] = "Gilbot"
+os.environ["GIT_AUTHOR_EMAIL"] = "gilbert@example.com"
+os.environ["GIT_COMMITTER_NAME"] = "Gilbot"
+os.environ["GIT_COMMITTER_EMAIL"] = "gilbert@example.com"
+
 # Allow any user to run git operations on the repo without dubious ownership errors
 os.environ["GIT_CONFIG_COUNT"] = "1"
 os.environ["GIT_CONFIG_KEY_0"] = "safe.directory"
